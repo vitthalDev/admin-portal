@@ -7,19 +7,7 @@ import CalendarComponent from '../../apps/calendar/index'
 function Remainder(props) {
     return (
         <>
-            <Row>
-                <Fragment>
-                    <Breadcrumb listClassName='breadcrumb-slash'>
-                        <BreadcrumbItem>
-                            <Menu />
-                            <Link to='/dashboard'>Dashboard</Link>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem active>
-                            <span>Remainder</span>
-                        </BreadcrumbItem>
-                    </Breadcrumb>
-                </Fragment>
-            </Row>
+
             <CalendarComponent />
         </>
     )
