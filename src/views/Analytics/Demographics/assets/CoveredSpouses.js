@@ -49,7 +49,7 @@ const CoveredSpouse = ({ info, direction }) => {
                 <h5>Age-Band wise distribution of covered spouses</h5>
             </CardHeader>
             <CardBody>
-                <Chart options={options} series={series} type='bar' height={200} width={350} />
+                <Chart options={options} series={series} type='bar' height={150} width={350} />
             </CardBody>
         </Card>
     )

@@ -79,6 +79,11 @@ const DashboardRoutes = [
     path: '/dashboard/providers',
     component: lazy(() => import('../../views/Providers/Providers')),
     exact: true
+  },
+  {
+    path: '/dashboard/issuedcard',
+    component: lazy(() => import('../../views/dashboard/MainDashboard/Assets/IssuedEcard')),
+    exact: true
   }
 ]
 

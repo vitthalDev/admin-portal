@@ -8,7 +8,7 @@ import grid from '@src/assets/images/icons/grid.png'
 function policies(props) {
     return (
         <>
-            <div className='mt-1 mb-1'>
+            <div className='mt-0 mb-0'>
                 <React.Fragment>
                     <Breadcrumb>
                         <BreadcrumbItem>

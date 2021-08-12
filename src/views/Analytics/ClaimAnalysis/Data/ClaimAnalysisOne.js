@@ -39,28 +39,48 @@ function ClaimAnalysisOne(props) {
                                 <tbody>
                                     <tr style={{ height: 60 }}>
                                         <td>Settled</td>
-                                        <td>20</td>
-                                        <td>867,434</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >30</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>867,434</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td>Outstanding</td>
-                                        <td>10</td>
-                                        <td>457,578</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >30</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>867,434</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td>Cashless Receivedpending for settlement</td>
-                                        <td>15</td>
-                                        <td>557,383</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >30</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>867,434</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td>Rejected</td>
-                                        <td>04</td>
-                                        <td>84,484</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >30</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>867,434</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td>Grand Total</td>
-                                        <td>52</td>
-                                        <td>1,993,925</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >30</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>867,434</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>
@@ -82,7 +102,9 @@ function ClaimAnalysisOne(props) {
                             <tbody>
                                 <tr style={{ height: 60 }}>
                                     <td>Data as on</td>
-                                    <td>05 Aug 2015</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end' >05 Aug 2015</span>
+                                    </td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>Policy Inseption Date</td>
@@ -94,23 +116,33 @@ function ClaimAnalysisOne(props) {
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>Total No. of Days from policy Inception</td>
-                                    <td>96</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end' >7</span>
+                                    </td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>Total Claim Cost(Total Settled Amt + Total Claimed Amt for Outstanding)</td>
-                                    <td>1,909,138</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>1,909,138</span>
+                                    </td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>Total Premium Paid Til DAte(Exclusive of Taxes)</td>
-                                    <td>6,586,762</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>6,586,762</span>
+                                    </td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>Earned Premium as on Date</td>
-                                    <td>1,732,409</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>1,732,409</span>
+                                    </td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td>8End of Policy Claim Cost</td>
-                                    <td>7,557,005</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>7,557,005</span>
+                                    </td>
                                 </tr>
                             </tbody>
                         </Table>

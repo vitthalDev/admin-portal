@@ -74,7 +74,7 @@ function PlanDetails(props) {
                                             <Col md='6' sm='12'>
                                                 <Label>Amount to be paid</Label><br />
                                                 <div style={{ paddingTop: 0 }}>
-                                                    <span className='font-weight-bold' style={{ fontSize: 23 }}><b>INR 5,00,000</b></span>
+                                                    <span className='font-weight-bold d-flex' style={{ fontSize: 23 }}><b>INR 5,00,000</b></span>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -118,8 +118,8 @@ function PlanDetails(props) {
                                         </Col>
                                         <Col md='6' sm='12'>
                                             <div className='mt-2'>
-                                                <span>INR 5,00,000</span><br /><br />
-                                                <span style={{ color: 'green' }}>- INR 5,000</span>
+                                                <span className='d-flex justify-content-end' >INR 5,00,000</span><br /><br />
+                                                <span className='d-flex justify-content-end' style={{ color: 'green' }}>- INR 5,000</span>
                                             </div>
                                         </Col>
                                     </Row>
@@ -129,7 +129,7 @@ function PlanDetails(props) {
                                             <Label>Total Amount</Label><br />
                                         </Col>
                                         <Col md='6' sm='12'>
-                                            <span>INR 4,95,000</span>
+                                            <span className='d-flex justify-content-end' >INR 4,95,000</span>
                                         </Col>
                                     </Row>
                                 </CardBody>

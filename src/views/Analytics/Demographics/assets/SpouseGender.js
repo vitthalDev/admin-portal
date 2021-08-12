@@ -26,7 +26,7 @@ const SpouseGender = props => {
     const spouse = {
         chart: {
             toolbar: {
-                show: true
+                show: false
             }
         },
         labels: ['Male', 'Female'],
@@ -85,10 +85,10 @@ const SpouseGender = props => {
                     <Col md='6' sm='12' className='pl-5' >
                         <h6>Spouse</h6>
                         <div>
-                            <Icon.Square size={15} color='#FFA726' style={{ backgroundColor: '#FFA726' }} /><span className='pr-1' style={{ fontSize: 10 }}>Male</span><span style={{ fontSize: 12, paddingLeft: 33 }}>-</span><span style={{ fontSize: 12, paddingLeft: 10 }}>50%</span>
+                            <Icon.Square size={10} color='#FFA726' style={{ backgroundColor: '#FFA726' }} /><span className='pr-1' style={{ fontSize: 10 }}>Male</span><span style={{ fontSize: 12, paddingLeft: 33 }}>-</span><span style={{ fontSize: 12, paddingLeft: 10 }}>50%</span>
                         </div>
                         <div>
-                            <Icon.Square size={15} color='#FFCB7E' style={{ backgroundColor: '#FFCB7E' }} /><span className='pr-1' style={{ fontSize: 10 }}>Female</span><span style={{ fontSize: 12, paddingLeft: 20 }}>-</span><span style={{ fontSize: 12, paddingLeft: 10 }}>50%</span>
+                            <Icon.Square size={10} color='#FFCB7E' style={{ backgroundColor: '#FFCB7E' }} /><span className='pr-1' style={{ fontSize: 10 }}>Female</span><span style={{ fontSize: 12, paddingLeft: 20 }}>-</span><span style={{ fontSize: 12, paddingLeft: 10 }}>50%</span>
                         </div>
                     </Col>
                     <Col md='6' sm='12' style={{ marginTop: -10 }}>

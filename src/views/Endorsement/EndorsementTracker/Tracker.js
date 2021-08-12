@@ -119,31 +119,41 @@ function Tracker(props) {
                                 <tr style={{ height: 60 }}>
                                     <td >Anjali Saxena</td>
                                     <td>Spouse</td>
-                                    <td>12 Jun 1980</td>
+                                    <td >
+                                        <span className='d-flex justify-content-end'>12 Jun 1980</span>
+                                    </td>
                                     <td>+91 8334687938</td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td >Rahul Saxena</td>
                                     <td>Son</td>
-                                    <td>20 Aug 2000</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>20 Aug 2000</span>
+                                    </td>
                                     <td>+91 8334689384</td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td >Riya Saxena</td>
                                     <td>Daughter</td>
-                                    <td>02 Sep 1990</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>02 Sep 1990</span>
+                                    </td>
                                     <td>+91 9134687938</td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td >Rakesh Saxena</td>
                                     <td>Father</td>
-                                    <td>20 Jun 1961</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>20 Jun 1961</span>
+                                    </td>
                                     <td>+91 9934687938</td>
                                 </tr>
                                 <tr style={{ height: 60 }}>
                                     <td >Pooja Saxena</td>
                                     <td>Mother</td>
-                                    <td>12 Jan 1963</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>12 Jan 1963</span>
+                                    </td>
                                     <td>+91 9734687938</td>
                                 </tr>
                             </tbody>

@@ -39,18 +39,30 @@ function ClaimAnalysisThree(props) {
                                 <tbody>
                                     <tr>
                                         <td>Cashless</td>
-                                        <td>22</td>
-                                        <td>728,407</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>77</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>728,407</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Reimbursement</td>
-                                        <td>36</td>
-                                        <td>4,180,731</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>36</span>
+                                        </td>
+                                        <td className='d-flex justify-content-end'>
+                                            <span>4,180,731</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Grand Total</td>
-                                        <td>58</td>
-                                        <td>1,909,138</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>58</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>1,909,138</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>
@@ -106,38 +118,66 @@ function ClaimAnalysisThree(props) {
                                 <tbody>
                                     <tr>
                                         <td> &lt; 10K</td>
-                                        <td>6</td>
-                                        <td>40,921</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>86</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>45,543</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>10K to Below 25K</td>
-                                        <td>13</td>
-                                        <td>198,334</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>68</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>6,75,543</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>25K to Below 50K</td>
-                                        <td>18</td>
-                                        <td>597,346</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>56</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>65,773</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>50K to Below 75K</td>
-                                        <td>4</td>
-                                        <td>249,222</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>65</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>45,343</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>75K to Below 100K</td>
-                                        <td>3</td>
-                                        <td>226,072</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>56</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>4,35,043</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>150K to Below 200K</td>
-                                        <td>2</td>
-                                        <td>704,321</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>56</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>3,45,433</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Grand Total</td>
-                                        <td>48</td>
-                                        <td>1,909.138</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>488</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>4,35,543</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>

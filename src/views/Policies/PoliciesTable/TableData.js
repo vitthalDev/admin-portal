@@ -30,10 +30,16 @@ const PoliciesTableData = () => {
                             <small className='p-1'><u>Family Floater Plan</u></small>
                         </Link>
                     </td>
-                    <td><samp>112</samp></td>
+                    <td><samp className='d-flex justify-content-end' >112</samp></td>
                     <td>Health Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>
+                            27 Feb 2021
+                        </span>
+                    </td>
                     <td><Download /></td>
                 </tr>
                 <tr>
@@ -41,10 +47,14 @@ const PoliciesTableData = () => {
                         <Avatar color='warning' content='A' style={{ marginRight: 12, padding: 2 }} />
                         <small className='p-1'><u>Add-On Health</u></small>
                     </td>
-                    <td><samp>130</samp></td>
+                    <td><samp className='d-flex justify-content-end'>130</samp></td>
                     <td>Health Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>27 Feb 2021</span>
+                    </td>
                     <td><Download /></td>
                 </tr>
                 <tr>
@@ -52,10 +62,16 @@ const PoliciesTableData = () => {
                         <Avatar color='danger' content='J' style={{ marginRight: 12, padding: 2 }} />
                         <small className='p-1'><u>Joint Health Insurance</u></small>
                     </td>
-                    <td><samp>12</samp></td>
+                    <td><samp className='d-flex justify-content-end'>12</samp></td>
                     <td>Health Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>
+                            27 Feb 2021
+                        </span>
+                    </td>
                     <td><Download /></td>
                 </tr>
                 <tr>
@@ -63,10 +79,14 @@ const PoliciesTableData = () => {
                         <Avatar color='primary' content='C' style={{ marginRight: 12, padding: 2 }} />
                         <small className='p-1'><u>Critical Illness Plan</u></small>
                     </td>
-                    <td><samp>02</samp></td>
+                    <td><samp className='d-flex justify-content-end'>02</samp></td>
                     <td>Life Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>27 Feb 2021</span>
+                    </td>
                     <td><Download /></td>
                 </tr>
                 <tr>
@@ -74,10 +94,14 @@ const PoliciesTableData = () => {
                         <Avatar color='success' content='G' style={{ marginRight: 12, padding: 2 }} />
                         <small className='p-1'><u>Group Health Insurance</u></small>
                     </td>
-                    <td><samp>14</samp></td>
+                    <td><samp className='d-flex justify-content-end'>14</samp></td>
                     <td>Health Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>27 Feb 2021</span>
+                    </td>
                     <td><Download /></td>
                 </tr>
                 <tr>
@@ -85,10 +109,14 @@ const PoliciesTableData = () => {
                         <Avatar color='danger' content='G' style={{ marginRight: 12, padding: 2 }} />
                         <small className='p-1'><u>Group Health Insurance</u></small>
                     </td>
-                    <td><samp>112</samp></td>
+                    <td><samp className='d-flex justify-content-end'>112</samp></td>
                     <td>Health Cover</td>
-                    <td>25 Jan 2021</td>
-                    <td>27 Feb 2021</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>25 Jan 2021</span>
+                    </td>
+                    <td>
+                        <span className='d-flex justify-content-end'>27 Feb 2021</span>
+                    </td>
                     <td><Download /></td>
                 </tr>
 

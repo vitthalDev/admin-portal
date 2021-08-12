@@ -1,6 +1,7 @@
-import React from 'react'
+import { React, Fragment, useState } from 'react'
 import Breadcrumbs from '@components/breadcrumbs'
-import { Row, Col, Card, CardHeader, CardTitle, CardBody, Form, FormGroup, Input, Label, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import Flatpickr from 'react-flatpickr'
+import { Row, Col, Card, CardHeader, CardTitle, CardBody, Form, FormGroup, Input, Label, Breadcrumb, BreadcrumbItem, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import { Calendar } from 'react-feather'
 import { Link } from 'react-router-dom'
 import ActiveAdmissions from './ActiveAdmissions/ActiveAdmissions'
@@ -9,11 +10,17 @@ import Analysis from './Analysis/Analysis'
 import grid from '@src/assets/images/icons/grid.png'
 
 function Claims(props) {
-    const [active, setActive] = React.useState("activeAdmissions")
+    const [picker, setPicker] = useState(56)
+    const [active, setActive] = useState("activeAdmissions")
+    const toggle = tab => {
+        if (active !== tab) {
+            setActive(tab)
+        }
+    }
     return (
         <>
             <div style={{ marginLeft: 5 }}>
-                <React.Fragment>
+                <Fragment>
                     <Breadcrumb>
                         <BreadcrumbItem>
                             <Link to='/'> <img src={grid} height='20' width='20' /> </Link>
@@ -22,69 +29,42 @@ function Claims(props) {
                             <span>Claims</span>
                         </BreadcrumbItem>
                     </Breadcrumb>
-                </React.Fragment>
+                </Fragment>
             </div>
 
-            <div className="row text-center" style={{ height: 45 }}>
-                <div className="col-lg-2 ml-1 mt-1">
-                    <div
-                        className={
-                            active === "activeAdmissions" ? "text-primary" : "text-black"
-                        }
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setActive("activeAdmissions")
-                        }}
-                        style={{ cursor: "pointer", fontSize: 15 }}
-                    >
-                        <span>Active Admissions</span>
-                    </div>
-                    <div>
-                        {active === "activeAdmissions" ? (
-                            <i className="fas fa-caret-up text-primary fs-1"></i>
-                        ) : (
-                            ""
-                        )}
-                    </div>
-                </div>
-                <div className="col-lg-2 mt-1">
-                    <div
-                        className={active === "pastClaims" ? "text-primary" : "text-black"}
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setActive("pastClaims")
-                        }}
-                        style={{ cursor: "pointer" }}
-                    >
-                        <span>Past Claims</span>
-                    </div>
-                    <div>
-                        {active === "pastClaims" ? (
-                            <i className="fas fa-caret-up text-primary fs-1"></i>
-                        ) : (
-                            ""
-                        )}
-                    </div>
-                </div>
-                <div className="col-lg-2 mt-1 mb-1">
-                    <div
-                        className={active === "analysis" ? "text-primary" : "text-black"}
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setActive("analysis")
-                        }}
-                        style={{ cursor: "pointer" }}
-                    >
-                        <span>Analysis</span>
-                    </div>
-                    <div>
-                        {active === "analysis" ? (
-                            <i className="fas fa-caret-up text-primary fs-1"></i>
-                        ) : (
-                            ""
-                        )}
-                    </div>
-                </div>
+            <div>
+                <Nav tabs justified>
+                    <NavItem>
+                        <NavLink
+                            active={active === 'activeAdmissions'}
+                            onClick={() => {
+                                toggle('activeAdmissions')
+                            }}
+                        >
+                            Active Admissions
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            active={active === 'pastClaims'}
+                            onClick={() => {
+                                toggle('pastClaims')
+                            }}
+                        >
+                            Past Claims
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            active={active === 'analysis'}
+                            onClick={() => {
+                                toggle('analysis')
+                            }}
+                        >
+                            Analysis
+                        </NavLink>
+                    </NavItem>
+                </Nav>
             </div>
 
             {active === 'activeAdmissions' ? (
@@ -228,12 +208,19 @@ function Claims(props) {
                                                     <Input type='select' name='policy' id='policyType' />
                                                 </FormGroup>
                                             </Col>
-                                            <Col md='4' sm='12' className='mt-1'>
-                                                <div>
-                                                    <span>Choose Date</span>
+                                            <Col md='4' sm='12'>
+                                                <div className='pt-0    '>
+                                                    <Label>Range</Label>
                                                 </div>
-                                                <div>
-                                                    <small><Calendar size={14} />2021-01--01 to 2021-07-03</small>
+                                                <div className='d-flex align-items-center'>
+                                                    <Calendar size={14} />
+                                                    {/* <Flatpickr
+                                                        options={{
+                                                            mode: 'range',
+                                                            defaultDate: ['2019-05-01', '2019-05-10']
+                                                        }}
+                                                        className='form-control flat-picker bg-transparent border-0 shadow-none'
+                                                    /> */}
                                                 </div>
                                             </Col>
                                         </Row>

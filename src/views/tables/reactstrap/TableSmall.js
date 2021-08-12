@@ -115,7 +115,7 @@ const TableSmall = () => {
         </tr>
       </thead>
       <tbody>
-        <tr style={{ height: 60 }}>
+        <tr style={{ height: 60 }}  >
           <td>
             <Media style={{ marginTop: 10 }}>
               <Avatar img={avatar1} />
@@ -132,10 +132,10 @@ const TableSmall = () => {
             <h5>Manager</h5>
           </td>
           <td>
-            20 jan 2021
+            <span className='d-flex justify-content-end'> 20 Jan 2021</span>
           </td>
-          <td>
-            24 Jan 2021
+          <td >
+            <span className='d-flex justify-content-end'> 24 Jan 2021</span>
           </td>
           <td>
             Cardiac Arrest
@@ -158,15 +158,15 @@ const TableSmall = () => {
             <h5>tax Consultant</h5>
           </td>
           <td>
-            5 jan 2021
+            <span className='d-flex justify-content-end'> 5 Jan 2021</span>
           </td>
           <td>
-            10 Jan 2021
+            <span className='d-flex justify-content-end'> 10 Jan 2021</span>
           </td>
           <td>
             Fever
           </td>
-        </tr>
+        </tr >
         <tr style={{ height: 60 }}>
           <td>
             <Media style={{ marginTop: 10 }}>
@@ -184,10 +184,10 @@ const TableSmall = () => {
             <h5>Designer</h5>
           </td>
           <td>
-            10 jan 2021
+            <span className='d-flex justify-content-end'> 10 Jan 2021</span>
           </td>
           <td>
-            15 Jan 2021
+            <span className='d-flex justify-content-end'> 15 Jan 2021</span>
           </td>
           <td>
             Malaria
@@ -210,10 +210,10 @@ const TableSmall = () => {
             <h5>Senior manager</h5>
           </td>
           <td>
-            20 jan 2021
+            <span className='d-flex justify-content-end'> 20 Jan 2021</span>
           </td>
           <td>
-            22 Jan 2021
+            <span className='d-flex justify-content-end'> 22 Jan 2021</span>
           </td>
           <td>
             Fever
@@ -236,10 +236,10 @@ const TableSmall = () => {
             <h5>Manager</h5>
           </td>
           <td>
-            20 jan 2021
+            <span className='d-flex justify-content-end'> 5 Jan 2021</span>
           </td>
           <td>
-            24 Jan 2021
+            <span className='d-flex justify-content-end'> 10 Jan 2021</span>
           </td>
           <td>
             Cardiac Arrest
@@ -262,17 +262,17 @@ const TableSmall = () => {
             <h5>Manager</h5>
           </td>
           <td>
-            20 jan 2021
+            <span className='d-flex justify-content-end'> 20 Jan 2021</span>
           </td>
           <td>
-            24 Jan 2021
+            <span className='d-flex justify-content-end'> 20 Jan 2021</span>
           </td>
           <td>
             Cardiac Arrest
           </td>
         </tr>
-      </tbody>
-    </Table>
+      </tbody >
+    </Table >
   )
 }
 

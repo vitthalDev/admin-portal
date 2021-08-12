@@ -219,10 +219,10 @@ function PoliciesQuickAccess(props) {
                             </Row>
                         </ModalBody>
                         <ModalFooter>
-                            <Button color='flat-primary' onClick={() => setRequestPolicies(!requestPolicies)}>
+                            <Button color='flat-danger' onClick={() => setRequestPolicies(!requestPolicies)}>
                                 Cancel
                             </Button>{' '}
-                            <Button color='flat-primary' outline onClick={() => setRequestPolicies(!requestPolicies)}>
+                            <Button color='flat-success' onClick={() => setRequestPolicies(!requestPolicies)}>
                                 Submit
                             </Button>{' '}
                         </ModalFooter>

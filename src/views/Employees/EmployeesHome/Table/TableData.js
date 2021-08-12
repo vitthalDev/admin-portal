@@ -31,7 +31,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td >
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -42,7 +44,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-001</span></td>
                     <td>Rahul@gmail.com</td>
-                    <td>9455465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end' >9455465872</span>
+                    </td>
                     <td>Tax Consultant</td>
                     <td style={{ cursor: 'pointer' }}>
                         <UncontrolledDropdown>
@@ -85,7 +89,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td  >
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>Article</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -96,7 +102,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-003</span></td>
                     <td>Vishal@gmail.com</td>
-                    <td>8984658872</td>
+                    <td >
+                        <span className='d-flex justify-content-end'>8984658872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -107,7 +115,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>Article</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -118,7 +128,11 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>
+                            8655465872
+                        </span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -129,7 +143,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-003</span></td>
                     <td>Vishal@gmail.com</td>
-                    <td>8984658872</td>
+                    <td className='d-flex justify-content-end ' >
+                        <span>8984658872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -140,7 +156,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-003</span></td>
                     <td>Vishal@gmail.com</td>
-                    <td>8984658872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>8984658872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -151,7 +169,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>Article</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -162,7 +182,9 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
@@ -173,12 +195,14 @@ const EmployeeTableData = () => {
                     </td>
                     <td><span>TT-002</span></td>
                     <td>Nikhil@gmail.com</td>
-                    <td>8655465872</td>
+                    <td>
+                        <span className='d-flex justify-content-end'>8655465872</span>
+                    </td>
                     <td>GST Manager</td>
                     <td style={{ cursor: 'pointer' }}><MoreVertical size={14} className='mr-50' /></td>
                 </tr>
             </tbody>
-        </Table>
+        </Table >
     )
 }
 

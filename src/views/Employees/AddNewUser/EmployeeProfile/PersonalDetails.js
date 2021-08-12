@@ -1,82 +1,3 @@
-// import { React, usestate } from 'react'
-// import { Card, CardHeader, CardTitle, CardBody, FormGroup, Row, Col, Input, Form, Button, Label } from 'reactstrap'
-
-
-// function PersonalDetails(props) {
-//     return (
-//         <>
-//             <Card>
-//             //personal Details
-//                 <CardHeader>
-//                     <CardTitle tag='h4'>Personal Details</CardTitle>
-//                 </CardHeader>
-
-//                 <CardBody>
-//                     <Form>
-//                         <Row>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='nationality'>Nationality</Label>
-//                                     <Input type='select' name='nationality' id='nationality'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='religion'>Religion</Label>
-//                                     <Input type='select' name='religion' id='religion'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                         </Row>
-//                         <Row>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='maritialStatus'>Maritial Status</Label>
-//                                     <Input type='select' name='maritialStatus' id='maritialStatus'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='employmentOfSpouse'>Employment Of Spouse</Label>
-//                                     <Input type='select' name='employmentOfSpouse' id='employmentOfSpouse'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                         </Row>
-//                         <Row>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='numberOfChildren'>No. of Children</Label>
-//                                     <Input type='select' name='numberOfChildren' id='numberOfChildren'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                             <Col md='6' sm='12'>
-//                                 <FormGroup>
-//                                     <Label for='phoneNumber'>Phone Number</Label>
-//                                     <Input type='phone' name='phoneNumber' id='phoneNumber'>
-//                                         <option>Select...</option>
-//                                     </Input>
-//                                 </FormGroup>
-//                             </Col>
-//                         </Row>
-//                     </Form>
-//                 </CardBody>
-
-//             </Card>
-//         </>
-//     )
-// }
-
-// export default PersonalDetails
-
 import { Fragment } from 'react'
 import classnames from 'classnames'
 import { isObjEmpty } from '@utils'
@@ -191,7 +112,7 @@ const PersonalDetails = ({ stepper, type }) => {
                     </FormGroup>
                 </Row>
                 <div className='d-flex justify-content-between'>
-                    <Button.Ripple color='primary' className='btn-prev' onClick={() => stepper.previous()}>
+                    <Button.Ripple color='warning' className='btn-prev' onClick={() => stepper.previous()}>
                         <ArrowLeft size={14} className='align-middle mr-sm-25 mr-0'></ArrowLeft>
                         <span className='align-middle d-sm-inline-block d-none'>Previous</span>
                     </Button.Ripple>

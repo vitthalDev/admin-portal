@@ -295,10 +295,10 @@ const EndersomentTable = () => {
                         </Row>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowAddEndorsement(!showAddEndorsement)}>
+                        <Button color='flat-danger' onClick={() => setShowAddEndorsement(!showAddEndorsement)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' outline onClick={() => setShowAddEndorsement(!showAddEndorsement)}>
+                        <Button color='flat-success' onClick={() => setShowAddEndorsement(!showAddEndorsement)}>
                             Submit
                         </Button>{' '}
                     </ModalFooter>

@@ -400,10 +400,10 @@ const PoliciesTable = () => {
                         </Row>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowAddPolicy(!showAddPolicy)}>
+                        <Button color='flat-danger' onClick={() => setShowAddPolicy(!showAddPolicy)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowAddPolicy(!showAddPolicy)}>
+                        <Button color='flat-success' onClick={() => setShowAddPolicy(!showAddPolicy)}>
                             Submit
                         </Button>{' '}
                     </ModalFooter>

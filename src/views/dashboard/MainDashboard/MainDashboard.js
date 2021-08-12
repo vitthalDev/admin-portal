@@ -1,10 +1,11 @@
 import { React, Fragment, useContext } from 'react'
 import Avatar from '@components/avatar'
-import { Breadcrumb, BreadcrumbItem, Row, Col, Card, CardBody, CardHeader, CardTitle, Media, Table, Progress } from 'reactstrap'
+import { Breadcrumb, BreadcrumbItem, Row, Col, Card, CardBody, CardHeader, CardTitle, Media, Table, Progress, FormGroup } from 'reactstrap'
 import { Menu, User, Users, Archive, File, CreditCard, Download, MoreVertical, Circle, DownloadCloud } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useSkin } from '@hooks/useSkin'
 import { Chart } from 'react-apexcharts'
+import grid from '@src/assets/images/icons/grid.png'
 import TableSmall from '../../tables/reactstrap/TableSmall'
 import TableServerSide from '../../tables/data-tables/advance/TableServerSide'
 import ApexScatterChart from '../../charts/apex/ApexScatterCharts'
@@ -35,6 +36,8 @@ import avatar2 from '@src/assets/images/portrait/small/avatar-s-2.jpg'
 import avatar3 from '@src/assets/images/portrait/small/avatar-s-3.jpg'
 import avatar4 from '@src/assets/images/portrait/small/avatar-s-4.jpg'
 import PolicyOverview from './Assets/PoliciesOverview'
+import PolicyTenure from './Assets/PolicyTenure'
+import DateRange from './Assets/DateRange'
 import PlanOne from './Assets/PlanOne'
 import PlanTwo from './Assets/PlanTwo'
 import PlanThree from './Assets/PlanThree'
@@ -66,210 +69,101 @@ function MainDashboard(props) {
         greyLightColor = '#EDF1F4'
     return (
         <>
-            {/* <Row>
-                <Fragment>
-                    <Breadcrumb listClassName='breadcrumb-slash'>
-                        <BreadcrumbItem>
-                            <Menu />
-                            <span>Dashboard</span>
-                        </BreadcrumbItem>
-                    </Breadcrumb>
-                </Fragment>
-            </Row> */}
-
+            <Fragment>
+                <Breadcrumb>
+                    <BreadcrumbItem>
+                        <Link to='/'> <img src={grid} height='20' width='20' /> </Link>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem active >
+                        <span>Home</span>
+                    </BreadcrumbItem>
+                </Breadcrumb>
+            </Fragment>
             <Row className='mt-1' >
                 <Col lg='3' sm='4'>
-                    <Card>
-                        <CardBody>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div>
-                                    <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>136</h2>
-                                    <p className='card-text' style={{ color: '#625F6E' }}>Employees</p>
+                    <Link to='/dashboard/employees'>
+                        <Card>
+                            <CardBody>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>136</h2>
+                                        <p className='card-text' style={{ color: '#625F6E' }}>Employees</p>
+                                    </div>
+                                    <div className='avatar avatar-stats p-50 m-0 bg-light-primary'>
+                                        <img src={group} style={{ height: 30, width: 30 }} />
+                                    </div>
                                 </div>
-                                <div className='avatar avatar-stats p-50 m-0 bg-light-primary'>
-                                    <img src={group} style={{ height: 30, width: 30 }} />
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </Link>
                 </Col>
                 <Col lg='3' sm='4'>
-                    <Card>
-                        <CardBody>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div>
-                                    <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>04</h2>
-                                    <p className='card-text'>Policies</p>
+                    <Link to='/dashboard/policies'>
+                        <Card>
+                            <CardBody>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>04</h2>
+                                        <p className='card-text' style={{ color: '#625F6E' }}>Policies</p>
+                                    </div>
+                                    <div className='avatar avatar-stats p-50 m-0 bg-light-info'>
+                                        <img src={papers} style={{ height: 30, width: 30 }} />
+                                    </div>
                                 </div>
-                                <div className='avatar avatar-stats p-50 m-0 bg-light-info'>
-                                    <img src={papers} style={{ height: 30, width: 30 }} />
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </Link>
                 </Col>
                 <Col lg='3' sm='4'>
-                    <Card>
-                        <CardBody>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div>
-                                    <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>136</h2>
-                                    <p className='card-text'>Claims</p>
+                    <Link to='/dashboard/claims'>
+                        <Card>
+                            <CardBody>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <h2 className='font-weight-medium mb-0' style={{ color: '#625F6E' }}>10</h2>
+                                        <p className='card-text' style={{ color: '#625F6E' }}>Claims</p>
+                                    </div>
+                                    <div className='avatar avatar-stats p-50 m-0 bg-light-danger'>
+                                        <img src={fileClock} style={{ height: 30, width: 30 }} />
+                                    </div>
                                 </div>
-                                <div className='avatar avatar-stats p-50 m-0 bg-light-danger'>
-                                    <img src={fileClock} style={{ height: 30, width: 30 }} />
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </Link>
                 </Col>
                 <Col lg='3' sm='4'>
-                    <Card>
-                        <CardBody>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div>
-                                    <h2 className='font-weight-medium mb-0' >80</h2>
-                                    <p className='card-text'>E card issued</p>
+                    <Link to='/dashboard/issuedcard'>
+                        <Card>
+                            <CardBody>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <h2 className='font-weight-medium mb-0' >136</h2>
+                                        <p className='card-text' style={{ color: '#625F6E' }}>E card issued</p>
+                                    </div>
+                                    <div className='avatar avatar-stats p-50 m-0 bg-light-success'>
+                                        <img src={cloudDownload} style={{ height: 30, width: 30 }} />
+                                        {/* <DownloadCloud size={30} /> */}
+                                    </div>
                                 </div>
-                                <div className='avatar avatar-stats p-50 m-0 bg-light-success'>
-                                    <img src={cloudDownload} style={{ height: 30, width: 30 }} />
-                                    {/* <DownloadCloud size={30} /> */}
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </Link>
                 </Col>
             </Row>
 
             <Row>
                 <Col lg='8'>
-                    <Card style={{ height: 510 }}>
-                        <CardHeader>
-                            <CardTitle tag='h4'>Policies</CardTitle>
-                        </CardHeader>
-                        <CardBody>
-                            <Row>
-                                <Col lg='3'>
-                                    <Row className=' d-flex align-items-center justify-content-center'>
-                                        <Col lg='12' style={{ paddingBottom: 10 }}>
-                                            <div style={{ marginTop: -10 }} >
-                                                <span style={{ color: '#8598AD' }}>Policy Plan 1</span>
-                                            </div>
-                                            <div className='d-flex justify-content-space-between ' style={{ paddingLeft: 0 }}>
-                                                <img src={male1} style={{ height: 25, width: 10 }} /><small style={{ color: '#0AC9C4', paddingLeft: 5, fontSize: 15 }}>40</small>
-                                                <img src={female1} style={{ height: 25, width: 10, marginLeft: 10 }} /><small style={{ color: '#34A3EC', paddingLeft: 5, fontSize: 15 }}>20</small>
-                                            </div>
-                                            <div style={{ width: 100, height: 50, marginTop: -70, marginLeft: 70 }}>
-                                                <PlanOne
-                                                    primary='#0AC9C4'
-                                                    warning='#34A3EC'
-                                                />
-                                            </div>
-                                        </Col>
-                                        {/* <Col lg='3'>
-                                            <div style={{ width: 100, height: 50, marginTop: -20, marginLeft: -60 }}>
-                                                <PlanOne
-                                                    primary='#0AC9C4'
-                                                    warning='#34A3EC'
-                                                />
-                                            </div>
-                                        </Col> */}
-                                    </Row>
-                                </Col>
-                                <Col lg='3'>
-                                    <Row className=' d-flex align-items-center justify-content-center'>
-                                        <Col lg='12' >
-                                            <div style={{ marginTop: -10 }} >
-                                                <span style={{ color: '#8598AD' }}>Policy Plan 1</span>
-                                            </div>
-                                            <div className='d-flex justify-content-space-between ' style={{ paddingLeft: 0 }}>
-                                                <img src={male2} style={{ height: 25, width: 10 }} /><small style={{ color: '#FF730C', paddingLeft: 5, fontSize: 15 }}>40</small>
-                                                <img src={female2} style={{ height: 25, width: 10, marginLeft: 10 }} /><small style={{ color: '#FCBF55', paddingLeft: 5, fontSize: 15 }}>20</small>
-                                            </div>
-                                            <div style={{ width: 100, height: 50, marginTop: -70, marginLeft: 70 }}>
-                                                <PlanOne
-                                                    primary='#FF730C'
-                                                    warning='#FCBF55'
-                                                />
-                                            </div>
-                                        </Col>
-                                        {/* <Col lg='3'>
-                                            <div style={{ width: 100, height: 50, marginTop: -20, marginLeft: -60 }}>
-                                                <PlanTwo
-                                                    primary='#FF730C'
-                                                    warning='#FCBF55'
-                                                />
-                                            </div>
-                                        </Col> */}
-                                    </Row>
-                                </Col>
-                                <Col lg='3'>
-                                    <Row className=' d-flex align-items-center justify-content-center'>
-                                        <Col lg='12'>
-                                            <div style={{ marginTop: -10 }}>
-                                                <span style={{ color: '#8598AD' }}>Policy Plan 3</span>
-                                            </div>
-                                            <div className='d-flex justify-content-space-between ' style={{ paddingLeft: 0, paddingBottom: 0 }}>
-                                                <img src={male3} style={{ height: 25, width: 10 }} /><small style={{ color: '#009EFF', paddingLeft: 5, fontSize: 15 }}>18</small>
-                                                <img src={female3} style={{ height: 25, width: 10, marginLeft: 10 }} /><small style={{ color: '#00F1FF', paddingLeft: 5, fontSize: 15 }}>10</small>
-                                            </div>
-                                            <div style={{ width: 100, height: 50, marginTop: -70, marginLeft: 70 }}>
-                                                <PlanThree
-                                                    primary='#009EFF'
-                                                    warning='#00F1FF'
-                                                />
-                                            </div>
-                                        </Col>
-                                        {/* <Col lg='3'>
-                                            <div style={{ width: 100, height: 50, marginTop: -20, marginLeft: -60 }}>
-                                                <PlanThree
-                                                    primary='#009EFF'
-                                                    warning='#00F1FF'
-                                                />
-                                            </div>
-                                        </Col> */}
-                                    </Row>
-                                </Col>
-                                <Col lg='3'>
-                                    <Row className=' d-flex align-items-center justify-content-center'>
-                                        <Col lg='12'>
-                                            <div style={{ marginTop: -10 }}>
-                                                <span style={{ color: '#8598AD' }}>Policy Plan 4</span>
-                                            </div>
-                                            <div className='d-flex justify-content-space-between ' style={{ paddingLeft: 0 }}>
-                                                <img src={male4} style={{ height: 25, width: 10 }} /><small style={{ color: '#8A44FF', paddingLeft: 5, fontSize: 15 }}>10</small>
-                                                <img src={female4} style={{ height: 25, width: 10, marginLeft: 10 }} /><small style={{ color: '#E19BFF', paddingLeft: 5, fontSize: 15 }}>05</small>
-                                            </div>
-                                            <div style={{ width: 100, height: 50, marginTop: -70, marginLeft: 70 }}>
-                                                <PlanFour
-                                                    primary='#8A44FF'
-                                                    warning='#E19BFF'
-                                                />
-                                            </div>
-                                        </Col>
-                                        {/* <Col lg='3'>
-                                            <div style={{ width: 100, height: 50, marginTop: -20, marginLeft: -60 }}>
-                                                <PlanFour
-                                                    primary='#8A44FF'
-                                                    warning='#E19BFF'
-                                                />
-                                            </div>
-                                        </Col> */}
-                                    </Row>
-                                </Col>
-                            </Row>
-
-                            <PolicyOverview
-                                primary={context.colors.primary.main}
-                                warning={context.colors.danger.main}
-                            />
-                        </CardBody>
-                    </Card>
-
-
+                    <PolicyTenure
+                        warningColorShade={warningColorShade}
+                        lineChartDanger={lineChartDanger}
+                        lineChartPrimary={lineChartPrimary}
+                        labelColor={labelColor}
+                        tooltipShadow={tooltipShadow}
+                        gridLineColor={gridLineColor}
+                    />
                 </Col>
 
-                <Col lg='4'>
+                <Col lg='4' >
                     <ActiveAdmissions
 
                     />

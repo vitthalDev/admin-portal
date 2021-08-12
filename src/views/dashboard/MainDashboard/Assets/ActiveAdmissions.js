@@ -1,5 +1,5 @@
 import Chart from 'react-apexcharts'
-import { Card, CardHeader, CardTitle, CardBody, CardSubtitle } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardSubtitle, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { Square } from 'react-feather'
 
 const ActiveAdmissions = () => {
@@ -96,49 +96,66 @@ const ActiveAdmissions = () => {
 
     return (
         <Card>
-            <CardHeader>
-                <div>
-                    <CardTitle className='mb-75' tag='h4' style={{ color: '#645E78' }}>
-                        Active Admissions
-                    </CardTitle>
-                </div>
+            <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
+                <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Active Admissions
+                </CardTitle>
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
             </CardHeader>
-            <CardBody>
+            <CardBody style={{ paddingBottom: 20 }}>
                 <Chart options={options} series={series} type='donut' height={300} />
-                <div className='d-flex justify-content-between mb-1'>
+                <div className='d-flex justify-content-between mb-1 mt-3'  >
                     <div className='d-flex align-items-center'>
                         <Square size={15} style={{ color: '#7367F0', backgroundColor: '#7367F0' }} />
                         <span className='font-weight-bold ml-75 mr-25'>Employees</span>
                     </div>
                     <div>
-                        <span>5 Lakh</span>
+                        <span>5,00,000</span>
                     </div>
                 </div>
-                <div className='d-flex justify-content-between mb-1'>
+                <div className='d-flex justify-content-between mb-1 mt-1'>
                     <div className='d-flex align-items-center'>
                         <Square size={15} style={{ color: '#FFCE76', backgroundColor: '#FFCE76' }} />
                         <span className='font-weight-bold ml-75 mr-25'>Spouse</span>
                     </div>
                     <div>
-                        <span>3 Lakh</span>
+                        <span>3,00,000</span>
                     </div>
                 </div>
-                <div className='d-flex justify-content-between mb-1'>
+                <div className='d-flex justify-content-between mb-1 mt-1'>
                     <div className='d-flex align-items-center'>
                         <Square size={15} style={{ color: '#FF8585', backgroundColor: '#FF8585' }} />
                         <span className='font-weight-bold ml-75 mr-25'>Children</span>
                     </div>
                     <div>
-                        <span>2 Lakh</span>
+                        <span>2,00,000</span>
                     </div>
                 </div>
-                <div className='d-flex justify-content-between mb-1'>
+                <div className='d-flex justify-content-between mt-1'>
                     <div className='d-flex align-items-center'>
                         <Square size={15} style={{ color: '#65FA9E', backgroundColor: '#65FA9E' }} />
                         <span className='font-weight-bold ml-75 mr-25'>Parents</span>
                     </div>
                     <div>
-                        <span>1 Lakh</span>
+                        <span>1,00,000</span>
                     </div>
                 </div>
             </CardBody>
