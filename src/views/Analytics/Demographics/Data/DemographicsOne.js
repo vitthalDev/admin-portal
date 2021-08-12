@@ -51,35 +51,64 @@ function DemographicsOne(props) {
                                 <tbody>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
-
                                 </tbody>
                             </Table>
                         </CardBody>
@@ -115,51 +144,99 @@ function DemographicsOne(props) {
                                 <tbody>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>6680</td>
-                                        <td>677</td>
-                                        <td>3%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>6,680</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>677</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-center'>3%</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>

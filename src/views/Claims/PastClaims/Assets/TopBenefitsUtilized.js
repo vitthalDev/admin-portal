@@ -24,7 +24,7 @@ const TopBenefitsUtilized = props => {
     const options = {
         chart: {
             toolbar: {
-                show: true
+                show: false
             }
         },
         labels: ['Employees', 'Spouse', 'Children', 'Parent'],
@@ -38,48 +38,31 @@ const TopBenefitsUtilized = props => {
     },
         series = [42, 32, 16, 10]
 
-    const renderChartInfo = () => {
-        return data.chart_info.map((item, index) => {
-            const IconTag = Icon[item.icon]
-            return (
-                <div
-                    // key={index}
-                    // className={classnames('d-flex justify-content-between', {
-                    //   'mb-1': index !== data.chart_info.length - 1
-                    // })}
-                    className='d-flex justify-content-between mb-1'
-                >
-                    <div className='d-flex align-items-center'>
-                        {/* <IconTag
-              size={17}
-              className={classnames({
-                [item.iconColor]: item.iconColor
-              })}
-            /> */}
-                        <Icon.Square size={15} style={{ color: 'purple' }} />
-                        <span className='font-weight-bold ml-75 mr-25'>Employees</span>
-                        <span>-58.6%</span>
-                        {/* <span>- {item.usage}%</span> */}
-                    </div>
-                    <div>
-                        <span>2%</span>
-                        <Icon.ArrowUp size={14} className='ml-25 text-success' />
-                        <Icon.ArrowDown size={14} className='ml-25 text-danger' />
-                        {/* {item.upDown > 0 ? (
-              <Icon.ArrowUp size={14} className='ml-25 text-success' />
-            ) : (
-              <Icon.ArrowDown size={14} className='ml-25 text-danger' />
-            )} */}
-                    </div>
-                </div>
-            )
-        })
-    }
-
-    return data !== null ? (
+    return (
         <Card>
-            <CardHeader className='d-flex flex-md-row flex-column justify-content-md-between justify-content-start align-items-md-center align-items-start'>
-                <CardTitle tag='h6'>Top Benefits Utilised</CardTitle>
+            <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
+                <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Cashless vs Rembursement Claims
+                </CardTitle>
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
             </CardHeader>
             <CardBody>
                 <Chart className='my-1' options={options} series={series} type='donut' height={270} />
@@ -93,6 +76,6 @@ const TopBenefitsUtilized = props => {
 
             </CardBody>
         </Card>
-    ) : null
+    )
 }
 export default TopBenefitsUtilized

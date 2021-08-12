@@ -1,5 +1,5 @@
 import Chart from 'react-apexcharts'
-import { Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 const MostlyClaimedDisease = () => {
     const donutColors = {
@@ -59,8 +59,29 @@ const MostlyClaimedDisease = () => {
 
     return (
         <Card>
-            <CardHeader className='d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start'>
-                <CardTitle tag='h4'>Statistics</CardTitle>
+            <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
+                <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Statics
+                </CardTitle>
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
             </CardHeader>
             <CardBody>
                 <Chart options={options} series={[80, 50, 35]} type='radialBar' height={390} />

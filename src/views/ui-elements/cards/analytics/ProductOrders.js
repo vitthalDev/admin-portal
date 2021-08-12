@@ -95,21 +95,21 @@ const ProductOrders = props => {
             <Circle size={15} className='text-primary' />
             <span className='font-weight-bold ml-75'>Covid</span>
           </div>
-          <span>{data.chart_info.finished}</span>
+          <span>23,043</span>
         </div>
         <div className='d-flex justify-content-between mb-1'>
           <div className='d-flex align-items-center'>
             <Circle size={15} className='text-warning' />
             <span className='font-weight-bold ml-75'>Typhoid</span>
           </div>
-          <span>{data.chart_info.pending}</span>
+          <span>14,648</span>
         </div>
         <div className='d-flex justify-content-between'>
           <div className='d-flex align-items-center'>
             <Circle size={15} className='text-danger' />
             <span className='font-weight-bold ml-75'>Heart Attack</span>
           </div>
-          <span>{data.chart_info.rejected}</span>
+          <span>4,758</span>
         </div>
       </CardBody>
     </Card>

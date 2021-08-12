@@ -70,7 +70,7 @@ function EmployeesProfile(props) {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col md='3'>
+                                <Col md='3' style={{ paddingLeft: 70 }}>
                                     <div style={{ padding: 5 }}>
                                         <span><Phone size={14} />Phone</span>
                                     </div>
@@ -112,14 +112,14 @@ function EmployeesProfile(props) {
                     <Card>
                         <CardBody style={{ height: 210 }}>
                             <Row style={{ paddingBottom: 12 }}>
-                                <Col md='8'>
+                                <Col sm='7'>
                                     <div style={{ fontSize: 10 }}>
                                         <span>Current Policy</span><br />
                                         <small>Family Floater Plan</small>
                                     </div>
                                 </Col>
-                                <Col md='4' style={{ fontSize: 8 }}>
-                                    <small className='bg-light-primary '>5 Lakh</small>
+                                <Col md='5' style={{ fontSize: 12 }}>
+                                    <span className='bg-light-primary' style={{ padding: 5 }}>5 lakh</span>
                                 </Col>
                             </Row>
                             <Row>
@@ -145,8 +145,8 @@ function EmployeesProfile(props) {
                             </Row><br />
                             <Row>
                                 <ButtonGroup>
-                                    <Button.Ripple color='primary' style={{ width: 100, marginLeft: 5, marginRight: 5 }} onClick={(e) => { setShowPolicyDetail(!showPolicyDetail) }}><small style={{ fontSize: 8 }}>Upgrade Plan</small></Button.Ripple>
-                                    <Button.Ripple color='warning' style={{ width: 100, marginLeft: 5, marginRight: 5 }}><small style={{ fontSize: 8 }}>Share Policy</small></Button.Ripple>
+                                    <Button.Ripple color='primary' style={{ width: 100, marginLeft: 5, marginRight: 5 }} onClick={(e) => { setShowPolicyDetail(!showPolicyDetail) }}><span style={{ fontSize: 10 }}>Upgrade Plan</span></Button.Ripple>
+                                    <Button.Ripple color='warning' style={{ width: 100, marginLeft: 5, marginRight: 5 }}><span style={{ fontSize: 10 }}>Share Policy</span></Button.Ripple>
                                 </ButtonGroup>
                             </Row>
                         </CardBody>
@@ -225,19 +225,25 @@ function EmployeesProfile(props) {
                                     <tr>
                                         <td>Rakesh</td>
                                         <td>Father</td>
-                                        <td>+91 9875688374</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 9875688374</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10, cursor: 'pointer' }} onClick={() => setShowEmergencyDetail(!showEmergencyDetail)} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Pooja</td>
                                         <td>Mother</td>
-                                        <td>+91 9875685294</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 9875685294</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Rohit</td>
                                         <td>Brother</td>
-                                        <td>+91 7598268374</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >+91 7598268374</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                 </tbody>
@@ -268,36 +274,56 @@ function EmployeesProfile(props) {
                                     <tr>
                                         <td>Anjali Sharma</td>
                                         <td>Spouse</td>
-                                        <td>12 June 1980</td>
-                                        <td>+91 9836718599</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>12 June 1980</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 9836718599</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Rahul Saxena</td>
                                         <td>Son</td>
-                                        <td>20 Aug 2005</td>
-                                        <td>+91 8647256983</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>20 Aug 2005</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 8647256983</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Riya Sharma</td>
                                         <td>Daughter</td>
-                                        <td>12 Sep 1999</td>
-                                        <td>+91 9625759842</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>12 Sep 1999</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 9625759842</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Rakesh Sharma</td>
                                         <td>Father</td>
-                                        <td>20 June 1960</td>
-                                        <td>+91 8546234984</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >20 June 1960</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 8546234984</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10, cursor: 'pointer' }} onClick={() => setShowFamilyDetail(!showFamilyDetail)} /><Trash2 size={16} /></td>
                                     </tr>
                                     <tr>
                                         <td>Pooja Sharma</td>
                                         <td>Mother</td>
-                                        <td>12 Sep 1963</td>
-                                        <td>+91 9542698472</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>12 Sep 1963</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>+91 9542698472</span>
+                                        </td>
                                         <td><Edit2 size={16} style={{ marginRight: 10 }} /><Trash2 size={16} /></td>
                                     </tr>
                                 </tbody>
@@ -395,10 +421,10 @@ function EmployeesProfile(props) {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowEditProfile(!showEditProfile)}>
+                        <Button color='flat-danger' onClick={() => setShowEditProfile(!showEditProfile)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' outline onClick={() => setShowEditProfile(!showEditProfile)}>
+                        <Button color='flat-success' onClick={() => setShowEditProfile(!showEditProfile)}>
                             Save
                         </Button>{' '}
                     </ModalFooter>
@@ -451,10 +477,10 @@ function EmployeesProfile(props) {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowPolicyDetail(!showPolicyDetail)}>
+                        <Button color='flat-danger' onClick={() => setShowPolicyDetail(!showPolicyDetail)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowPolicyDetail(!showPolicyDetail)}>
+                        <Button color='flat-success' onClick={() => setShowPolicyDetail(!showPolicyDetail)}>
                             Save
                         </Button>{' '}
                     </ModalFooter>
@@ -513,17 +539,17 @@ function EmployeesProfile(props) {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowPersonalDetail(!showPersonalDetail)}>
+                        <Button color='flat-danger' onClick={() => setShowPersonalDetail(!showPersonalDetail)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowPersonalDetail(!showPersonalDetail)}>
+                        <Button color='flat-success' onClick={() => setShowPersonalDetail(!showPersonalDetail)}>
                             Save
                         </Button>{' '}
                     </ModalFooter>
                 </Modal>
             </div>
 
-            {/* personal details modal */}
+            {/* Family details modal */}
 
             <div>
                 <Modal isOpen={showFamilyDetail} toggle={() => setShowFamilyDetail(!showFamilyDetail)} className='modal-dialog-centered'>
@@ -561,10 +587,10 @@ function EmployeesProfile(props) {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowFamilyDetail(!showFamilyDetail)}>
+                        <Button color='flat-danger' onClick={() => setShowFamilyDetail(!showFamilyDetail)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowFamilyDetail(!showFamilyDetail)}>
+                        <Button color='flat-success' onClick={() => setShowFamilyDetail(!showFamilyDetail)}>
                             Save
                         </Button>{' '}
                     </ModalFooter>
@@ -603,10 +629,10 @@ function EmployeesProfile(props) {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowEmergencyDetail(!showEmergencyDetail)}>
+                        <Button color='flat-danger' onClick={() => setShowEmergencyDetail(!showEmergencyDetail)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowEmergencyDetail(!showEmergencyDetail)}>
+                        <Button color='flat-success' onClick={() => setShowEmergencyDetail(!showEmergencyDetail)}>
                             Save
                         </Button>{' '}
                     </ModalFooter>

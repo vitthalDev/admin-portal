@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Chart from 'react-apexcharts'
-import { Card, CardHeader, CardTitle, CardBody, ButtonGroup, Button } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, ButtonGroup, Button, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 const OverallClaims = ({ direction, warning, primary, success }) => {
     const [active, setActive] = useState('daily')
@@ -51,8 +51,29 @@ const OverallClaims = ({ direction, warning, primary, success }) => {
 
     return (
         <Card>
-            <CardHeader className='d-flex flex-md-row flex-column justify-content-md-between justify-content-start align-items-md-center align-items-start'>
-                <CardTitle tag='h4'>Overall No. of Claims</CardTitle>
+            <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
+                <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Overall No. of Claims
+                </CardTitle>
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
             </CardHeader>
             <CardBody>
                 <Chart options={options} series={series} type='scatter' height={400} />

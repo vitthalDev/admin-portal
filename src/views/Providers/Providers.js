@@ -123,11 +123,17 @@ function Providers(props) {
                                             <MapPin color={'red'} size={14} /><span style={{ fontSize: 10 }}>Grant Road Mumbai- 4200002</span>
                                         </td>
                                         <td style={{ fontSize: 12, width: 120 }}>Open 24 hrs</td>
-                                        <td style={{ fontSize: 12, width: 120 }}>+91 9347432788</td>
+                                        <td style={{ fontSize: 12, width: 120 }}>
+                                            <span className='d-flex justify-content-end'>+91 9347432788</span>
+                                        </td>
                                         <td style={{ fontSize: 12, width: 120 }}><Badge color='info' pill>In-Network</Badge></td>
                                         <td style={{ fontSize: 12, width: 150 }}>Hospital</td>
-                                        <td>06</td>
-                                        <td>02</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>06</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>02</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td style={{ width: 250 }}>
@@ -135,11 +141,17 @@ function Providers(props) {
                                             <MapPin color={'red'} size={14} /><span style={{ fontSize: 10 }}>Charni Road Mumbai- 4200002</span>
                                         </td>
                                         <td style={{ fontSize: 12, width: 120 }}>Open 24 hrs</td>
-                                        <td style={{ fontSize: 12, width: 120 }}>+91 8947432788</td>
+                                        <td style={{ fontSize: 12, width: 120 }}>
+                                            <span className='d-flex justify-content-end'>+91 8947432788</span>
+                                        </td>
                                         <td style={{ fontSize: 12, width: 120 }}><Badge color='info' pill>In-Network</Badge></td>
                                         <td style={{ fontSize: 12, width: 150 }}>Hospital</td>
-                                        <td>16</td>
-                                        <td>06</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>16</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>06</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td style={{ width: 250 }}>
@@ -147,11 +159,17 @@ function Providers(props) {
                                             <MapPin color={'red'} size={14} /><span style={{ fontSize: 10 }}>Manpada Road Mumbai- 4200002</span>
                                         </td>
                                         <td style={{ fontSize: 12, width: 120 }}>Open 24 hrs</td>
-                                        <td style={{ fontSize: 12, width: 120 }}>+91 9787432788</td>
+                                        <td style={{ fontSize: 12, width: 120 }}>
+                                            <span className='d-flex justify-content-end'>+91 9787432788</span>
+                                        </td>
                                         <td style={{ fontSize: 12, width: 120 }}><Badge color='danger' pill>Out-Network</Badge></td>
                                         <td style={{ fontSize: 12, width: 150 }}>Laboratory</td>
-                                        <td>0</td>
-                                        <td>0</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>0</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>0</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td style={{ width: 250 }}>
@@ -159,11 +177,17 @@ function Providers(props) {
                                             <MapPin color={'red'} size={14} /><span style={{ fontSize: 10 }}>Grant Road Mumbai- 4200002</span>
                                         </td>
                                         <td style={{ fontSize: 12, width: 120 }}>Open 24 hrs</td>
-                                        <td style={{ fontSize: 12, width: 120 }}>+91 7347432788</td>
+                                        <td style={{ fontSize: 12, width: 120 }}>
+                                            <span className='d-flex justify-content-end'>+91 7347432788</span>
+                                        </td>
                                         <td style={{ fontSize: 12, width: 120 }}><Badge color='info' pill>In-Network</Badge></td>
                                         <td style={{ fontSize: 12, width: 150 }}>Blood bank</td>
-                                        <td>0</td>
-                                        <td>0</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>0</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>0</span>
+                                        </td>
                                     </tr>
                                     <tr style={{ height: 60 }}>
                                         <td style={{ width: 250 }}>
@@ -171,11 +195,17 @@ function Providers(props) {
                                             <MapPin color={'red'} size={14} /><span style={{ fontSize: 10 }}>Hind Mata Chowk Mumbai- 4200002</span>
                                         </td>
                                         <td style={{ fontSize: 12, width: 120 }}>Open 24 hrs</td>
-                                        <td style={{ fontSize: 12, width: 120 }}>+91 9947432788</td>
+                                        <td style={{ fontSize: 12, width: 120 }}>
+                                            <span className='d-flex justify-content-end'>+91 9947432788</span>
+                                        </td>
                                         <td style={{ fontSize: 12, width: 120 }}><Badge color='info' pill>In-Network</Badge></td>
                                         <td style={{ fontSize: 12, width: 150 }}>Hospital</td>
-                                        <td>03</td>
-                                        <td>01</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>03</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>01</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>

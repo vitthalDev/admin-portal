@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Card, CardBody } from 'reactstrap'
 import { Users, Archive, File, Download } from 'react-feather'
+import { Link } from 'react-router-dom'
 import Avatar from '@components/avatar'
 import group from '@src/assets/images/icons/group.png'
 import blueMale from '@src/assets/images/icons/blueMale.png'
@@ -57,19 +58,21 @@ function EmployeesQuickAccess(props) {
                     </Card>
                 </Col>
                 <Col lg='3' sm='4'>
-                    <Card>
-                        <CardBody>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div>
-                                    <h2 className='font-weight-bolder mb-0'>136</h2>
-                                    <p className='card-text'>E-Card Issued</p>
+                    <Link to='/dashboard/issuedcard'>
+                        <Card>
+                            <CardBody>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <h2 className='font-weight-bolder mb-0'>136</h2>
+                                        <p className='card-text' style={{ color: '#625F6E' }}>E-Card Issued</p>
+                                    </div>
+                                    <div className='avatar avatar-stats p-50 m-0 bg-light-success'>
+                                        <img src={cloudDownload} height='30' width='30' />
+                                    </div>
                                 </div>
-                                <div className='avatar avatar-stats p-50 m-0 bg-light-success'>
-                                    <img src={cloudDownload} height='30' width='30' />
-                                </div>
-                            </div>
-                        </CardBody>
-                    </Card>
+                            </CardBody>
+                        </Card>
+                    </Link>
                 </Col>
             </Row>
         </>

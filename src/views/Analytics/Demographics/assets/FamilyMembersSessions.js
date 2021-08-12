@@ -24,7 +24,7 @@ const FamilyMembersSession = props => {
     const options = {
         chart: {
             toolbar: {
-                show: true
+                show: false
             }
         },
         labels: ['Employees', 'Spouse', 'Children', 'Parent'],
@@ -78,8 +78,32 @@ const FamilyMembersSession = props => {
 
     return data !== null ? (
         <Card>
+            <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
+                {/* <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Active Admissions
+                </CardTitle> */}
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
+            </CardHeader>
             <CardBody>
-                <Chart className='my-1' options={options} series={series} type='donut' height={290} />
+                <Chart className='my-1' options={options} series={series} type='donut' height={250} />
                 {/* {renderChartInfo()} */}
                 <div className='d-flex justify-content-between'>
                     <Icon.Square size={15} style={{ color: '#673AB7', backgroundColor: '#673AB7' }} /><span className='pr-1'>Employees</span>

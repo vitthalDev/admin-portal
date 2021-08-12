@@ -29,7 +29,7 @@ function ClaimAnalysisTwo(props) {
                             <CardTitle tag='h6'>Claim Incidences Ratio & Projection</CardTitle>
                         </CardHeader>
                         <CardBody>
-                            <Table size='sm' responsive style={{ height: 250 }}>
+                            <Table size='sm' responsive style={{ height: 300 }}>
                                 <thead>
                                     <tr>
                                         <th>RELATION</th>
@@ -42,38 +42,78 @@ function ClaimAnalysisTwo(props) {
                                 <tbody>
                                     <tr>
                                         <td>Employee</td>
-                                        <td>10</td>
-                                        <td>38</td>
-                                        <td>1%</td>
-                                        <td>5%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >10</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>39</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>1%</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>5%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Spouse</td>
-                                        <td>18</td>
-                                        <td>68</td>
-                                        <td>3%</td>
-                                        <td>12%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >2</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>75</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>3%</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>4%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Child</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0%</td>
-                                        <td>0%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >4</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>76</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>3%</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>3%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Parent</td>
-                                        <td>20</td>
-                                        <td>76</td>
-                                        <td>2%</td>
-                                        <td>7%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >3</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>23</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>4%</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>12%</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Grand Total</td>
-                                        <td>48</td>
-                                        <td>183</td>
-                                        <td>2%</td>
-                                        <td>6%</td>
+                                        <td>
+                                            <span className='d-flex justify-content-end' >4</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>54</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>15%</span>
+                                        </td>
+                                        <td>
+                                            <span className='d-flex justify-content-end'>5%</span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </Table>
@@ -102,28 +142,48 @@ function ClaimAnalysisTwo(props) {
                             <tbody>
                                 <tr>
                                     <td>Employee</td>
-                                    <td>10</td>
-                                    <td>534,005</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>10</span>
+                                    </td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>2,33,434</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Spouse</td>
-                                    <td>18</td>
-                                    <td>670,821</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>18</span>
+                                    </td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>6,70,443</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Child</td>
-                                    <td>-</td>
-                                    <td>-</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>-</span>
+                                    </td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>-</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Parent</td>
-                                    <td>20</td>
-                                    <td>704,321</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>20</span>
+                                    </td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>1,99,566</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Grand Total</td>
-                                    <td>48</td>
-                                    <td>1,909,138</td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>48</span>
+                                    </td>
+                                    <td>
+                                        <span className='d-flex justify-content-end'>19,99,566</span>
+                                    </td>
                                 </tr>
                             </tbody>
                         </Table>

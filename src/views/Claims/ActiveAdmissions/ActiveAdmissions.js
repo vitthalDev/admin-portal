@@ -300,10 +300,10 @@ function ActiveAdmissions() {
                         </Form>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color='flat-primary' onClick={() => setShowRequiredDocuments(!showRequiredDocuments)}>
+                        <Button color='flat-danger' onClick={() => setShowRequiredDocuments(!showRequiredDocuments)}>
                             Cancel
                         </Button>{' '}
-                        <Button color='flat-primary' onClick={() => setShowRequiredDocuments(!showRequiredDocuments)}>
+                        <Button color='flat-success' onClick={() => setShowRequiredDocuments(!showRequiredDocuments)}>
                             Submit
                         </Button>{' '}
                     </ModalFooter>

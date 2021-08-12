@@ -1,13 +1,19 @@
 import React from 'react'
 import Breadcrumbs from '@components/breadcrumbs'
-import { Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import { Row, Col, Breadcrumb, BreadcrumbItem, Nav, NavItem, NavLink } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import Demographics from './Demographics/Demographics'
 import ClaimAnalysis from './ClaimAnalysis/ClaimAnalysis'
 import grid from '@src/assets/images/icons/grid.png'
 
 function Analytics(props) {
+    // const [active, setActive] = React.useState("demographics")
     const [active, setActive] = React.useState("demographics")
+    const toggle = tab => {
+        if (active !== tab) {
+            setActive(tab)
+        }
+    }
     return (
         <>
             <div style={{ marginLeft: 5 }}>
@@ -22,47 +28,29 @@ function Analytics(props) {
                     </Breadcrumb>
                 </React.Fragment>
             </div>
-            <div className="row text-center mt-1" style={{ height: 45 }}>
-                <div className="col-lg-2">
-                    <div
-                        className={
-                            active === "demographics" ? "text-primary" : "text-black"
-                        }
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setActive("demographics")
-                        }}
-                        style={{ cursor: "pointer", fontSize: 15 }}
-                    >
-                        <span>Demographics</span>
-                    </div>
-                    <div>
-                        {active === "demographics" ? (
-                            <i className="fas fa-caret-up text-primary fs-1"></i>
-                        ) : (
-                            ""
-                        )}
-                    </div>
-                </div>
-                <div className="col-lg-2">
-                    <div
-                        className={active === "claimAnalysis" ? "text-primary" : "text-black"}
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setActive("claimAnalysis")
-                        }}
-                        style={{ cursor: "pointer" }}
-                    >
-                        <span>Claim Analysis</span>
-                    </div>
-                    <div>
-                        {active === "claimAnalysis" ? (
-                            <i className="fas fa-caret-up text-primary fs-1"></i>
-                        ) : (
-                            ""
-                        )}
-                    </div>
-                </div>
+            <div>
+                <Nav tabs justified>
+                    <NavItem>
+                        <NavLink
+                            active={active === 'demographics'}
+                            onClick={() => {
+                                toggle('demographics')
+                            }}
+                        >
+                            Demographics
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            active={active === 'claimAnalysis'}
+                            onClick={() => {
+                                toggle('claimAnalysis')
+                            }}
+                        >
+                            Claim Analysis
+                        </NavLink>
+                    </NavItem>
+                </Nav>
             </div>
 
             <Row>

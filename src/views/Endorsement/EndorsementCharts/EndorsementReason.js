@@ -2,7 +2,7 @@ import React from 'react'
 import Flatpickr from 'react-flatpickr'
 import { Calendar } from 'react-feather'
 import { HorizontalBar } from 'react-chartjs-2'
-import { Card, CardHeader, CardTitle, CardBody, CardSubtitle } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardSubtitle, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 
 const EndorsementReason = ({ tooltipShadow, gridLineColor, labelColor, info }) => {
@@ -86,20 +86,28 @@ const EndorsementReason = ({ tooltipShadow, gridLineColor, labelColor, info }) =
     return (
         <Card>
             <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
-                <div>
-                    {/* <CardSubtitle className='text-muted mb-25'>Balance</CardSubtitle> */}
-                    <CardTitle tag='h4'>Endorsement Reason</CardTitle>
-                </div>
-                {/* <div className='d-flex align-items-center'>
-                    <Calendar size={14} />
-                    <Flatpickr
-                        options={{
-                            mode: 'range',
-                            defaultDate: ['2019-05-01', '2019-05-10']
-                        }}
-                        className='form-control flat-picker bg-transparent border-0 shadow-none'
-                    />
-                </div> */}
+                <CardTitle className='' tag='h4' style={{ color: '#645E78' }}>
+                    Endorsement Reasons
+                </CardTitle>
+                <UncontrolledDropdown className='chart-dropdown'>
+                    <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
+                        Last 7 days
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            Last 7 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 30 days
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 6 Months
+                        </DropdownItem>
+                        <DropdownItem>
+                            Last 1 Year
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
             </CardHeader>
             <CardBody>
                 <div style={{ height: '400px' }}>

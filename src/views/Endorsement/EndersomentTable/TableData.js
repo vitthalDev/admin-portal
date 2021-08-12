@@ -24,7 +24,7 @@ const EndorsementTableData = () => {
         <tr style={{ height: 60 }}>
           <td>
             <Link to='/dashboard/endorsement/tracker' style={{ color: '#9B9B9B' }}>
-              5645644464
+              <span className='d-flex justify-content-end'> 5645644464</span>
             </Link>
           </td>
           <td>
@@ -33,7 +33,9 @@ const EndorsementTableData = () => {
             </Link>
           </td>
           <td>Rahul Sharma</td>
-          <td>29 Jan 2021</td>
+          <td>
+            <span className='d-flex justify-content-end'>29 Jan 2021</span>
+          </td>
           <td>Address Change</td>
           <td>
             <Badge color='info' pill className='badge' >
@@ -42,10 +44,14 @@ const EndorsementTableData = () => {
           </td>
         </tr>
         <tr style={{ height: 60 }}>
-          <td>476589435</td>
+          <td>
+            <span className='d-flex justify-content-end'>476589435</span>
+          </td>
           <td>Paid</td>
           <td>Nikhil Singh</td>
-          <td>25 Jan 2021</td>
+          <td>
+            <span className='d-flex justify-content-end'>25 Jan 2021</span>
+          </td>
           <td>Contact Info Update</td>
           <td>
             <Badge color='warning' pill className='badge'>
@@ -54,10 +60,14 @@ const EndorsementTableData = () => {
           </td>
         </tr>
         <tr style={{ height: 60 }}>
-          <td>984757458</td>
+          <td>
+            <span className='d-flex justify-content-end'> 984757458</span>
+          </td>
           <td>Nill</td>
           <td>Rekha Sharma</td>
-          <td>29 Jan 2021</td>
+          <td>
+            <span className='d-flex justify-content-end'>29 Jan 2021</span>
+          </td>
           <td>Add Spouse</td>
           <td>
             <Badge color='warning' pill className='badge'>
